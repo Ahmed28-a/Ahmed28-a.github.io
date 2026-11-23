@@ -1,0 +1,1414 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<meta name="description" content="مسام — MASAM: مشروع جلد طبيعي صناعة يدوية. شنط ومحافظ وحفر بالليزر على الجلد. قطعة إيكاروس الوحيدة معروضة للبيع الآن." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="مسام — MASAM" />
+<meta property="og:title" content="مسام — MASAM | جلد طبيعي صناعة يدوية" />
+<meta property="og:description" content="جلد طبيعي بيتصنّع بالإيد وبيعيش العمر كله. قطعة إيكاروس الوحيدة — جلد طبيعي كامل وحفر ليزر — معروضة للبيع الآن بـ١٬٨٠٠ جنيه: ٥٠٪ عربون، وبتعاينها قبل سداد الباقي." />
+<meta property="og:image" content="https://muse.ai/s/mwq-msm-masam-hxy6xokxoxcxkxf7xv/_mJvrar9iEcBnoDvHky-I-zBVmsgJp0mKtzggwgchyY/assets/01-hero.jpg" />
+<meta property="og:image:alt" content="شنطة إيكاروس — جلد طبيعي بنقش إيكاروس المحفور بالليزر" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="مسام — MASAM | جلد طبيعي صناعة يدوية" />
+<meta name="twitter:description" content="قطعة إيكاروس الوحيدة معروضة للبيع الآن — جلد طبيعي كامل، صناعة يدوية، ٥٠٪ عربون والمعاينة قبل سداد الباقي." />
+<meta name="twitter:image" content="https://muse.ai/s/mwq-msm-masam-hxy6xokxoxcxkxf7xv/_mJvrar9iEcBnoDvHky-I-zBVmsgJp0mKtzggwgchyY/assets/01-hero.jpg" />
+<link rel="icon" href="data:," />
+<title>مسام — MASAM | جلد طبيعي صناعة يدوية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700;800;900&family=Marcellus&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="assets/01-hero.jpg" fetchpriority="high" />
+<style>
+  :root{
+    --bg:#150e06;
+    --bg-2:#1d1308;
+    --surface:#241809;
+    --surface-2:#2d1e0c;
+    --ink:#f2e7d3;
+    --ink-soft:#d8c6a6;
+    --muted:#a98f68;
+    --tan:#c68a4b;
+    --tan-deep:#9a6527;
+    --gold:#d3a24e;
+    --gold-soft:rgba(211,162,78,.55);
+    --line:rgba(211,162,78,.22);
+    --line-strong:rgba(211,162,78,.45);
+    --shadow:0 24px 60px rgba(0,0,0,.55);
+    --radius:14px;
+    --font-body:"Tajawal",system-ui,sans-serif;
+    --font-display:"Amiri",serif;
+    --font-latin:"Marcellus",serif;
+  }
+  *{box-sizing:border-box}
+  [hidden]{display:none !important}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 500px at 85% -5%, rgba(198,138,75,.14), transparent 60%),
+      radial-gradient(900px 600px at 0% 30%, rgba(154,101,39,.10), transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:17px;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:clip;
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  ::selection{background:var(--tan-deep);color:#fff}
+
+  /* ---------- stitch divider: the brand's thread ---------- */
+  .stitch{border:none;border-top:2px dashed var(--gold-soft);opacity:.7;margin:0}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:60;
+    backdrop-filter:blur(10px);
+    background:rgba(21,14,6,.82);
+    border-bottom:1px solid var(--line);
+    transition:background .3s ease;
+  }
+  .nav{
+    max-width:1180px;margin:0 auto;padding:7px 20px;
+    display:flex;align-items:center;gap:14px;flex-wrap:nowrap;
+  }
+  .brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;flex-shrink:0}
+  .brand .ar{font-family:var(--font-display);font-weight:700;font-size:27px;line-height:1;color:var(--ink)}
+  .brand .lat{font-family:var(--font-latin);letter-spacing:.42em;font-size:12.5px;color:var(--gold);text-transform:uppercase}
+  .nav-links{display:flex;gap:2px;margin-inline-start:auto;flex-wrap:nowrap}
+  .nav-links a{
+    text-decoration:none;color:var(--ink-soft);font-weight:500;font-size:15px;white-space:nowrap;
+    padding:8px 10px;min-height:44px;display:inline-flex;align-items:center;border-radius:8px;
+  }
+  .nav-links a:hover{color:var(--gold);background:rgba(211,162,78,.08)}
+  .nav-cta{
+    text-decoration:none;background:var(--gold);color:#241703;font-weight:800;font-size:14.5px;
+    padding:8px 16px;min-height:44px;display:inline-flex;align-items:center;border-radius:9px;flex-shrink:0;
+  }
+  .nav-cta:hover{background:#e2b45e}
+  .nav-toggle{
+    display:none;width:46px;height:46px;flex-shrink:0;
+    background:transparent;border:1.5px solid var(--line-strong);border-radius:9px;cursor:pointer;
+    flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0;
+  }
+  .nav-toggle span{display:block;width:20px;height:2px;background:var(--gold);border-radius:2px;transition:transform .25s ease,opacity .2s ease}
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  @media (max-width:1100px){
+    .nav{gap:10px;padding:7px 14px}
+    .nav-toggle{display:inline-flex}
+    .nav-cta{margin-inline-start:auto}
+    .nav-links{
+      display:none;position:absolute;top:100%;inset-inline:0;z-index:59;
+      flex-direction:column;align-items:stretch;gap:0;margin:0;
+      background:rgba(24,15,6,.98);border-bottom:1px solid var(--line-strong);
+      box-shadow:0 24px 40px rgba(0,0,0,.5);padding:8px 14px 12px;
+    }
+    .nav-links.open{display:flex}
+    .nav-links a{
+      padding:12px 10px;min-height:48px;font-size:16px;border-radius:0;
+      border-bottom:1px dashed rgba(211,162,78,.18);
+    }
+    .nav-links a:last-child{border-bottom:none}
+  }
+  @media (max-width:420px){
+    .brand .lat{display:none}
+    .nav-cta{padding:8px 12px;font-size:13.5px}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-media{position:absolute;inset:0}
+  .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+  .hero-media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(to left, rgba(21,14,6,.94) 30%, rgba(21,14,6,.72) 55%, rgba(21,14,6,.35) 100%),
+               linear-gradient(to top, var(--bg) 2%, transparent 40%);
+  }
+  .hero-inner{
+    position:relative;z-index:2;max-width:1180px;margin:0 auto;
+    padding:96px 20px 110px;max-width:1180px;
+  }
+  .hero-name{
+    font-family:var(--font-display);font-weight:700;
+    font-size:clamp(92px,17vw,190px);line-height:1.05;margin:0;color:var(--ink);
+    text-shadow:0 6px 40px rgba(0,0,0,.5);
+  }
+  .hero-lat{
+    font-family:var(--font-latin);letter-spacing:.65em;font-size:clamp(15px,2.6vw,22px);
+    color:var(--gold);margin:6px 0 0;text-transform:uppercase;
+  }
+  .hero-tag{
+    font-size:clamp(21px,3.4vw,30px);font-weight:700;line-height:1.7;
+    max-width:560px;margin:26px 0 8px;color:var(--ink);
+  }
+  .hero-sub{color:var(--ink-soft);max-width:520px;margin:0 0 34px;font-size:17.5px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    min-height:52px;padding:12px 26px;border-radius:10px;font-weight:800;font-size:16.5px;
+    transition:transform .15s ease, background .2s ease, border-color .2s ease;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn-gold{background:var(--gold);color:#241703}
+  .btn-gold:hover{background:#e2b45e}
+  .btn-ghost{border:1.5px solid var(--line-strong);color:var(--ink);background:rgba(21,14,6,.35)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .hero-facts{
+    display:flex;gap:0;flex-wrap:wrap;margin-top:56px;max-width:640px;
+    border-top:2px dashed var(--gold-soft);padding-top:22px;
+  }
+  .hero-facts div{padding-inline-end:26px;margin-inline-end:26px;border-inline-end:1px solid var(--line)}
+  .hero-facts div:last-child{border-inline-end:none;margin-inline-end:0;padding-inline-end:0}
+  .hero-facts b{display:block;font-size:19px;color:var(--gold);line-height:1.4}
+  .hero-facts span{font-size:14px;color:var(--ink-soft)}
+  @media (max-width:640px){
+    .hero-inner{padding:64px 20px 72px}
+    .hero-facts div{padding-inline-end:16px;margin-inline-end:16px}
+  }
+
+  /* ---------- layout ---------- */
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  section{padding:84px 0}
+  section[id]{scroll-margin-top:76px}
+  .sec-head{max-width:720px;margin-bottom:44px}
+  .sec-head h2{
+    font-family:var(--font-display);font-weight:700;
+    font-size:clamp(34px,5.4vw,52px);line-height:1.35;margin:0 0 12px;
+  }
+  .sec-head h2 em{font-style:normal;color:var(--gold)}
+  .sec-head p{color:var(--ink-soft);margin:0;font-size:17.5px}
+  .rule{width:74px;height:0;border-top:3px dashed var(--gold);margin-bottom:22px;opacity:.9}
+
+  /* ---------- about ---------- */
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+  .about-grid figure{margin:0;position:relative}
+  .about-grid figure img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3.4;object-fit:cover;width:100%}
+  .about-grid figcaption{
+    position:absolute;bottom:14px;inset-inline-start:14px;
+    background:rgba(21,14,6,.85);border:1px solid var(--line);border-radius:8px;
+    padding:6px 14px;font-size:14px;color:var(--ink-soft);backdrop-filter:blur(4px);
+  }
+  .about-copy p{color:var(--ink-soft);margin:0 0 18px;font-size:17.5px}
+  .about-copy p strong{color:var(--ink)}
+  .about-copy .lead{font-size:20px;color:var(--ink);font-weight:500;line-height:1.9}
+  .craft-points{list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:2px dashed var(--gold-soft);display:grid;gap:14px}
+  .craft-points li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-soft)}
+  .craft-points li b{color:var(--ink)}
+  .craft-points .dot{
+    flex-shrink:0;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-top:12px;
+    box-shadow:0 0 0 4px rgba(211,162,78,.15);
+  }
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:34px}}
+
+  /* ---------- featured piece ---------- */
+  .featured{background:linear-gradient(180deg, var(--bg-2), var(--bg));border-block:1px solid var(--line)}
+  .piece-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+  .viewer{position:sticky;top:82px}
+  .viewer-main{
+    border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+    border:1px solid var(--line);background:var(--surface);
+  }
+  .viewer-main img{width:100%;aspect-ratio:4/3.1;object-fit:cover;cursor:zoom-in}
+  .viewer-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+  .viewer-thumbs button{
+    padding:0;border:2px solid transparent;border-radius:10px;overflow:hidden;cursor:pointer;
+    background:var(--surface);min-height:44px;line-height:0;
+  }
+  .viewer-thumbs button img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .viewer-thumbs button.active{border-color:var(--gold)}
+  .viewer-thumbs button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .one-badge{
+    display:inline-flex;align-items:center;gap:8px;background:rgba(211,162,78,.12);
+    border:1px solid var(--line-strong);color:var(--gold);font-weight:800;font-size:14.5px;
+    padding:7px 16px;border-radius:999px;margin-bottom:18px;
+  }
+  .piece-copy h2{font-family:var(--font-display);font-weight:700;font-size:clamp(36px,5.6vw,54px);line-height:1.35;margin:0 0 6px}
+  .piece-copy h2 .lat{font-family:var(--font-latin);letter-spacing:.18em;color:var(--gold);font-size:.62em}
+  .piece-quote{
+    font-family:var(--font-display);font-size:clamp(21px,3vw,26px);color:var(--tan);
+    margin:10px 0 18px;line-height:1.8;
+  }
+  .piece-copy>p{color:var(--ink-soft);margin:0 0 16px}
+  .specs{list-style:none;margin:24px 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+  .specs li{
+    display:flex;justify-content:space-between;gap:18px;padding:11px 2px;
+    border-bottom:1px solid var(--line);font-size:16px;
+  }
+  .specs li span:first-child{color:var(--muted);flex-shrink:0}
+  .specs li span:last-child{color:var(--ink);font-weight:500;text-align:left}
+  .price-row{
+    display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:28px 0 8px;
+    padding:20px 22px;background:var(--surface);border:1px dashed var(--line-strong);border-radius:var(--radius);
+  }
+  .price-row .price{font-size:38px;font-weight:900;line-height:1.2;color:var(--gold)}
+  .price-row .price small{font-size:17px;font-weight:700;color:var(--ink-soft)}
+  .price-row .note{color:var(--ink-soft);font-size:15px;line-height:1.7;max-width:250px}
+  .piece-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+  @media (max-width:900px){
+    .piece-grid{grid-template-columns:1fr;gap:34px}
+    .viewer{position:static}
+  }
+
+  /* ---------- wallets ---------- */
+  .wallet-block{margin-bottom:64px}
+  .wallet-block:last-child{margin-bottom:0}
+  .wallet-sep{margin:0 0 64px}
+  .viewer-thumbs.five{grid-template-columns:repeat(5,1fr)}
+  .viewer-thumbs.three{grid-template-columns:repeat(3,1fr)}
+  .viewer-thumbs.two{grid-template-columns:repeat(2,1fr)}
+  .wallet-video{margin:28px 0 0;max-width:300px}
+  .wallet-video video{
+    width:100%;aspect-ratio:9/16;max-height:480px;object-fit:cover;display:block;
+    border-radius:var(--radius);border:1px solid var(--line);background:#000;box-shadow:var(--shadow);
+  }
+  .wallet-video figcaption{padding:12px 4px 0;color:var(--ink-soft);font-size:15px}
+  .wallet-video figcaption b{color:var(--gold);display:block;font-size:16.5px}
+  @media (max-width:900px){.wallet-video{margin-inline:auto}}
+  @media (min-width:901px){
+    .piece-grid.flip .viewer{grid-column:2;grid-row:1}
+    .piece-grid.flip .piece-copy{grid-column:1;grid-row:1}
+  }
+
+  /* ---------- gallery ---------- */
+  .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+  .g-item{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;cursor:zoom-in;border:1px solid var(--line);background:var(--surface)}
+  .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .g-item:hover img{transform:scale(1.04)}
+  .g-item figcaption{
+    position:absolute;bottom:0;inset-inline:0;padding:38px 18px 14px;
+    background:linear-gradient(to top, rgba(15,9,3,.92), transparent);
+    color:var(--ink);font-size:15px;font-weight:500;line-height:1.7;
+  }
+  .g-item figcaption b{color:var(--gold);display:block;font-size:16px}
+  .g-a{grid-column:span 7;aspect-ratio:16/10.5}
+  .g-b{grid-column:span 5;aspect-ratio:4/3.28}
+  .g-c{grid-column:span 5;aspect-ratio:4/3.28}
+  .g-d{grid-column:span 7;aspect-ratio:16/10.5}
+  @media (max-width:760px){
+    .g-a,.g-b,.g-c,.g-d{grid-column:span 12;aspect-ratio:4/3}
+  }
+
+  /* ---------- services ---------- */
+  .services{background:var(--bg-2);border-block:1px solid var(--line)}
+  .svc-list{display:grid;gap:0;border-top:1px solid var(--line)}
+  .svc{
+    display:grid;grid-template-columns:88px 1fr auto;gap:22px;align-items:center;
+    padding:30px 6px;border-bottom:1px solid var(--line);
+  }
+  .svc .num{font-family:var(--font-display);font-size:44px;color:var(--tan-deep);line-height:1;font-weight:700}
+  .svc h3{margin:0 0 6px;font-size:22px;font-weight:800}
+  .svc p{margin:0;color:var(--ink-soft);max-width:620px}
+  .svc .tag{
+    border:1px dashed var(--line-strong);color:var(--gold);border-radius:999px;
+    padding:7px 16px;font-size:14px;font-weight:700;white-space:nowrap;
+  }
+  @media (max-width:700px){
+    .svc{grid-template-columns:52px 1fr}
+    .svc .num{font-size:32px}
+    .svc .tag{display:none}
+  }
+
+  /* ---------- steps ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .step{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 22px;position:relative;
+  }
+  .step::before{
+    content:"";position:absolute;top:0;inset-inline:22px;
+    border-top:3px dashed var(--gold-soft);transform:translateY(-1px);
+  }
+  .step .n{
+    width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;margin-bottom:16px;
+  }
+  .step h3{margin:0 0 6px;font-size:18.5px}
+  .step p{margin:0;color:var(--ink-soft);font-size:15.5px;line-height:1.8}
+  @media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+  /* ---------- order / contact ---------- */
+  .order{
+    background:
+      radial-gradient(700px 320px at 50% 0%, rgba(198,138,75,.16), transparent 65%),
+      var(--bg-2);
+    border-top:1px solid var(--line);text-align:center;
+  }
+  .order h2{font-family:var(--font-display);font-weight:700;font-size:clamp(36px,6vw,58px);line-height:1.4;margin:0 0 14px}
+  .order h2 em{font-style:normal;color:var(--gold)}
+  .order p{color:var(--ink-soft);max-width:560px;margin:0 auto 32px;font-size:18px}
+  .ig-btn{
+    display:inline-flex;align-items:center;gap:12px;min-height:58px;padding:14px 32px;
+    background:var(--gold);color:#241703;border-radius:12px;text-decoration:none;
+    font-weight:900;font-size:18px;box-shadow:0 14px 34px rgba(211,162,78,.25);
+  }
+  .ig-btn:hover{background:#e2b45e}
+  .ig-btn svg{width:24px;height:24px;flex-shrink:0}
+  .ig-handle{display:block;margin-top:16px;color:var(--muted);font-size:15.5px;direction:ltr;letter-spacing:.04em}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);padding:38px 0 46px}
+  .foot{
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between;
+  }
+  .foot .brand .ar{font-size:24px}
+  .foot p{margin:0;color:var(--muted);font-size:14.5px}
+  .foot a{color:var(--gold);text-decoration:none;font-weight:700;padding:8px 4px;min-height:36px;display:inline-flex;align-items:center}
+  .foot a:hover{text-decoration:underline}
+
+  /* ---------- lightbox ---------- */
+  .lightbox{
+    position:fixed;inset:0;z-index:100;background:rgba(10,6,2,.94);
+    display:none;align-items:center;justify-content:center;flex-direction:column;padding:20px;
+  }
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:min(1020px,94vw);max-height:76vh;border-radius:12px;box-shadow:var(--shadow);object-fit:contain}
+  .lightbox .cap{color:var(--ink-soft);margin-top:16px;font-size:16px;text-align:center;max-width:640px}
+  .lb-btn{
+    position:absolute;background:rgba(36,24,9,.9);border:1px solid var(--line-strong);color:var(--ink);
+    width:48px;height:48px;border-radius:50%;cursor:pointer;font-size:20px;line-height:1;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .lb-btn:hover{border-color:var(--gold);color:var(--gold)}
+  .lb-close{top:18px;inset-inline-end:18px}
+  .lb-prev{top:50%;inset-inline-start:14px;transform:translateY(-50%)}
+  .lb-next{top:50%;inset-inline-end:14px;transform:translateY(-50%)}
+
+  /* ---------- hero: full screen ---------- */
+  .hero{min-height:calc(100svh - 60px);display:flex;align-items:center}
+  .hero .hero-inner{width:100%;padding-top:76px;padding-bottom:96px}
+
+  /* ---------- piece status ---------- */
+  .status-badge .status-dot{
+    width:10px;height:10px;border-radius:50%;background:#a9bd6d;flex-shrink:0;
+    box-shadow:0 0 0 0 rgba(169,189,109,.5);animation:pulse 2.2s infinite;
+  }
+  .status-badge[data-status="sold"] .status-dot{background:#b3563e;animation:none;box-shadow:none}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(169,189,109,.45)}
+    70%{box-shadow:0 0 0 9px rgba(169,189,109,0)}
+    100%{box-shadow:0 0 0 0 rgba(169,189,109,0)}
+  }
+
+  /* ---------- story / making ---------- */
+  .story{background:var(--bg-2);border-block:1px solid var(--line)}
+  .story-days{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:40px}
+  .day{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  }
+  .day img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .day .day-body{padding:20px 20px 22px}
+  .day .day-tag{
+    display:inline-block;font-size:13.5px;font-weight:800;color:var(--gold);
+    border:1px dashed var(--line-strong);border-radius:999px;padding:3px 12px;margin-bottom:10px;
+  }
+  .day h3{margin:0 0 6px;font-size:19px}
+  .day p{margin:0;color:var(--ink-soft);font-size:15.5px;line-height:1.8}
+  .story-video{display:grid;grid-template-columns:300px 1fr;gap:36px;align-items:center;max-width:900px;margin:0 auto}
+  .story-video video{
+    width:100%;aspect-ratio:9/16;max-height:520px;object-fit:cover;
+    border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);background:#000;
+  }
+  .story-video h3{font-family:var(--font-display);font-size:clamp(26px,3.6vw,34px);margin:0 0 10px;line-height:1.5}
+  .story-video p{color:var(--ink-soft);margin:0}
+  @media (max-width:860px){
+    .story-days{grid-template-columns:1fr}
+    .story-video{grid-template-columns:1fr;gap:22px}
+    .story-video video{max-width:320px;margin:0 auto}
+  }
+
+  /* ---------- videos ---------- */
+  .videos-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:780px;margin:0 auto}
+  .video-card{margin:0}
+  .video-card video{
+    width:100%;aspect-ratio:9/16;max-height:540px;object-fit:cover;display:block;
+    border-radius:var(--radius);border:1px solid var(--line);background:#000;box-shadow:var(--shadow);
+  }
+  .video-card figcaption{padding:14px 6px 0;color:var(--ink-soft);font-size:15.5px;text-align:center}
+  .video-card figcaption b{color:var(--gold);display:block;font-size:16.5px}
+  @media (max-width:560px){.videos-grid{grid-template-columns:1fr;max-width:330px}}
+
+  /* ---------- questionnaire ---------- */
+  .order-form-sec{background:var(--bg-2);border-block:1px solid var(--line)}
+  .q-form{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:34px 30px;box-shadow:var(--shadow);
+  }
+  .q-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 22px}
+  .field{display:flex;flex-direction:column;gap:8px}
+  .field.full{grid-column:1/-1}
+  .field label,.field .f-label{font-weight:700;font-size:16px;color:var(--ink)}
+  .field label .opt,.field .f-label .opt{color:var(--muted);font-weight:500;font-size:13.5px}
+  .field input[type="text"],.field input[type="tel"],.field input[type="date"],
+  .field select,.field textarea{
+    background:var(--bg);border:1px solid var(--line-strong);border-radius:9px;color:var(--ink);
+    font-family:var(--font-body);font-size:16px;padding:12px 14px;min-height:50px;width:100%;
+  }
+  .field textarea{min-height:96px;resize:vertical;line-height:1.8}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+  .chips{display:flex;flex-wrap:wrap;gap:9px}
+  .chip{position:relative;cursor:pointer}
+  .chip input{position:absolute;opacity:0;inset:0;cursor:pointer}
+  .chip span{
+    display:inline-flex;align-items:center;min-height:46px;padding:9px 18px;border-radius:999px;
+    border:1.5px solid var(--line-strong);color:var(--ink-soft);font-weight:700;font-size:15.5px;
+    transition:background .15s ease,color .15s ease,border-color .15s ease;
+  }
+  .chip:hover span{border-color:var(--gold)}
+  .chip input:checked+span{background:var(--gold);color:#241703;border-color:var(--gold)}
+  .chip input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+  .photo-field{
+    border:1.5px dashed var(--line-strong);border-radius:var(--radius);padding:20px;
+    background:rgba(211,162,78,.05);
+  }
+  .photo-field input[type="file"]{color:var(--ink-soft);font-family:var(--font-body);font-size:15px;max-width:100%}
+  .photo-note{color:var(--muted);font-size:14px;margin:10px 0 0;line-height:1.8}
+  .photo-preview{display:none;margin-top:14px}
+  .photo-preview.show{display:block}
+  .photo-preview img{max-width:220px;max-height:220px;border-radius:10px;border:1px solid var(--line-strong);object-fit:cover}
+  .q-submit{margin-top:26px;width:100%;justify-content:center;font-size:17.5px;cursor:pointer;border:none}
+  .pay-note{
+    margin-top:24px;padding:14px 18px;border:1px dashed var(--line-strong);border-radius:10px;
+    background:rgba(211,162,78,.07);color:var(--ink);font-size:15.5px;text-align:center;
+  }
+  .pay-note b{color:var(--gold)}
+  .field .req{color:#e08a6d;font-weight:900}
+  .field input.invalid{border-color:#e08a6d}
+  .q-error{display:none;color:#e08a6d;font-weight:700;margin:14px 0 0;font-size:15.5px}
+  .q-error.show{display:block}
+  .q-result{
+    display:none;margin-top:28px;border-top:2px dashed var(--gold-soft);padding-top:24px;
+  }
+  .q-result.show{display:block}
+  .q-result h3{margin:0 0 8px;font-size:20px}
+  .q-result p{color:var(--ink-soft);margin:0 0 14px;font-size:15.5px}
+  .q-result textarea{
+    width:100%;min-height:230px;background:var(--bg);color:var(--ink);border:1px solid var(--line-strong);
+    border-radius:10px;padding:16px;font-family:var(--font-body);font-size:15.5px;line-height:1.9;resize:vertical;
+  }
+  .q-result-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+  .copy-btn{
+    display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:10px;
+    background:transparent;border:1.5px solid var(--line-strong);color:var(--ink);
+    font-family:var(--font-body);font-weight:800;font-size:16px;cursor:pointer;
+  }
+  .copy-btn:hover{border-color:var(--gold);color:var(--gold)}
+  .copy-ok{color:#a9bd6d;font-weight:700;align-self:center;font-size:15px}
+  @media (max-width:700px){
+    .q-grid{grid-template-columns:1fr}
+    .q-form{padding:26px 20px}
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:820px;display:grid;gap:12px}
+  .faq-item{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  }
+  .faq-item summary{
+    cursor:pointer;padding:20px 24px;font-weight:800;font-size:17.5px;list-style:none;
+    display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:44px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{
+    content:"+";color:var(--gold);font-size:26px;font-weight:400;line-height:1;flex-shrink:0;
+    transition:transform .25s ease;
+  }
+  .faq-item[open ] summary::after{transform:rotate(45deg)}
+  .faq-item .faq-a{padding:0 24px 22px;color:var(--ink-soft)}
+  .faq-item .faq-a p{margin:0}
+
+  /* ---------- reviews (empty state) ---------- */
+  .reviews-empty{
+    border:1.5px dashed var(--line-strong);border-radius:var(--radius);
+    padding:52px 28px;text-align:center;max-width:760px;margin:0 auto;
+  }
+  .reviews-empty .big{font-family:var(--font-display);font-size:clamp(24px,4vw,32px);margin:0 0 10px;line-height:1.6}
+  .reviews-empty p{color:var(--ink-soft);margin:0 auto;max-width:520px}
+
+  /* ---------- sticky mobile bar ---------- */
+  .sticky-bar{
+    position:fixed;bottom:0;inset-inline:0;z-index:65;display:none;gap:8px;
+    padding:8px 12px calc(8px + env(safe-area-inset-bottom));
+    background:rgba(21,14,6,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line-strong);
+    transform:translateY(110%);transition:transform .35s ease;
+  }
+  .sticky-bar.show{transform:none}
+  .sticky-bar a{
+    flex:1;text-align:center;text-decoration:none;font-weight:800;font-size:15.5px;
+    min-height:46px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;
+  }
+  .sticky-bar .sb-gold{background:var(--gold);color:#241703}
+  .sticky-bar .sb-ghost{border:1.5px solid var(--line-strong);color:var(--ink);flex:0 0 34%}
+  @media (max-width:760px){
+    .sticky-bar{display:flex}
+    body{padding-bottom:70px}
+    .hero{min-height:calc(100svh - 58px - 64px)}
+    .hero .hero-inner{padding-bottom:40px}
+  }
+
+  /* ---------- reveal ---------- */
+  .reveal{transition:opacity .7s ease, transform .7s ease}
+  html.js .reveal:not(.in){opacity:0;transform:translateY(22px)}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .g-item img{transition:none}
+    .sticky-bar{transition:none}
+    .status-badge .status-dot{animation:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="التنقل الرئيسي">
+    <a class="brand" href="#top" aria-label="مسام — الرئيسية">
+      <span class="ar">مسام</span><span class="lat">Masam</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#craft">الحرفة</a>
+      <a href="#icarus">قطعة إيكاروس</a>
+      <a href="#wallets">المحافظ البترولي</a>
+      <a href="#story">قصة الصنع</a>
+      <a href="#gallery">الأعمال</a>
+      <a href="#services">الخدمات</a>
+      <a href="#order-form">اطلب قطعتك</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+    </div>
+    <a class="nav-cta" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener">اطلب دلوقتي</a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="فتح قائمة الأقسام"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/01-hero.jpg" alt="" fetchpriority="high" />
+    </div>
+    <div class="hero-inner">
+      <h1 class="hero-name">مسام</h1>
+      <p class="hero-lat">Masam — Leather Craft</p>
+      <p class="hero-tag">جلد طبيعي بيتصنّع بالإيد… وبيعيش العمر كله.</p>
+      <p class="hero-sub">كل قطعة في مسام بتتولد من جلد طبيعي كامل، تتقصّ وتتخيّط وتتنقش بإيد صانع واحد — عشان توصلك قطعة مالهاش أخت، وتكبر معاك وتحلى مع السنين.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#icarus">شوف القطعة</a>
+        <a class="btn btn-ghost" href="#order-form">اطلب قطعة خاصة</a>
+      </div>
+      <div class="hero-facts">
+        <div><b>١٠٠٪</b><span>جلد طبيعي كامل</span></div>
+        <div><b>بالإيد</b><span>قص وخياطة ونقش</span></div>
+        <div><b>قطعة واحدة</b><span>من كل تصميم</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT / CRAFT ===== -->
+  <section id="craft">
+    <div class="wrap about-grid">
+      <div class="about-copy reveal">
+        <div class="rule"></div>
+        <div class="sec-head" style="margin-bottom:20px">
+          <h2>الحرفة قبل <em>المنتج</em></h2>
+        </div>
+        <p class="lead">«مسام» مشروع جلد طبيعي معمول بالإيد من أول قصّة لآخر غرزة — والاسم جاي من مسام الجلد نفسه: زي ما كل إنسان له بشرة مختلفة، كل جلد طبيعي له مسام وملمس وطابع مختلف. في مسام، بنختار إزاي نوظّف الاختلاف ده في التصميم، لأنه بيفرق في شكل القطعة وشخصيتها.</p>
+        <p>الجلد الصناعي بيبدأ حلو ويموت وحش: يتشقق ويقشّر وريحته تبان. أما <strong>الجلد الطبيعي فبيبدأ حلو ويكبر أحلى</strong> — كل شهر لونه يغمق ولمعته تهدى، ويتنقش عليه عمر صاحبه. عشان كده كل قطعة هنا مش بتتعمل عشان موسم… بتتعمل عشان تعيش.</p>
+        <p>مفيش خط إنتاج ومفيش نسخ مكررة. فيه صانع واحد، وجلد أصلي، ووقت حقيقي بيتحط في كل غرزة.</p>
+        <ul class="craft-points">
+          <li><span class="dot"></span><span><b>جلد طبيعي كامل</b> — مسامه وحبيباته باينة، وده اللي مستحيل يتقلّد.</span></li>
+          <li><span class="dot"></span><span><b>خياطة يدوية غرزة غرزة</b> — أقوى من خياطة المكنة وبتتصلّح لو احتاجت.</span></li>
+          <li><span class="dot"></span><span><b>نقش وحفر بالليزر</b> — محفور في الجلد نفسه: مش بيتمسح ومش بيتقشّر.</span></li>
+        </ul>
+      </div>
+      <figure class="reveal">
+        <img loading="lazy" decoding="async" src="assets/04-lifestyle.jpg" alt="شنطة إيكاروس الجلد الطبيعي في الاستخدام اليومي على طاولة مقهى" />
+        <figcaption>جلد طبيعي بيحلى مع الاستعمال اليومي</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <hr class="stitch" />
+
+  <!-- ===== FEATURED: ICARUS ===== -->
+  <section class="featured" id="icarus">
+    <div class="wrap">
+      <div class="piece-grid">
+        <div class="viewer reveal">
+          <div class="viewer-main">
+            <img id="viewerImg" src="assets/01-hero.jpg" alt="شنطة إيكاروس — جلد طبيعي بنقش إيكاروس المحفور بالليزر" loading="lazy" decoding="async" />
+          </div>
+          <div class="viewer-thumbs" role="group" aria-label="صور الشنطة">
+            <button type="button" class="active" data-full="assets/01-hero.jpg" data-alt="شنطة إيكاروس من الأمام على خلفية الاستوديو الدافئة"><img src="assets/01-hero.jpg" alt="صورة الشنطة الرئيسية" /></button>
+            <button type="button" data-full="assets/02-detail.jpg" data-alt="لقطة قريبة لنقش إيكاروس المحفور بالليزر ومسام الجلد والغرز اليدوية"><img loading="lazy" decoding="async" src="assets/02-detail.jpg" alt="تفاصيل النقش والغرز" /></button>
+            <button type="button" data-full="assets/03-editorial.jpg" data-alt="شنطة إيكاروس في لقطة بإضاءة درامية"><img loading="lazy" decoding="async" src="assets/03-editorial.jpg" alt="لقطة الشنطة الدرامية" /></button>
+            <button type="button" data-full="assets/04-lifestyle.jpg" data-alt="شنطة إيكاروس في الاستخدام اليومي"><img loading="lazy" decoding="async" src="assets/04-lifestyle.jpg" alt="الشنطة في الاستخدام اليومي" /></button>
+          </div>
+        </div>
+
+        <div class="piece-copy reveal">
+          <!-- حالة القطعة: available = متاحة الآن. عند البيع: غيّر data-status إلى sold والنص إلى «اتباعت»، وفعّل رابط قائمة الانتظار #waitlistCta تحت -->
+          <span class="one-badge status-badge" data-status="available"><span class="status-dot" aria-hidden="true"></span>قطعة واحدة — متاحة الآن</span>
+          <h2>شنطة إيكاروس <span class="lat">Icarus</span></h2>
+          <p class="piece-quote">«هيتخانقوا عليها لما تموت» — دي مش جملة إعلانات، دي أدق وصف للشنطة دي.</p>
+          <p>شنطة كروس جلد طبيعي كامل، محفور عليها بالليزر إيكاروس طاير ناحية الشمس — النقش محفور في الجلد نفسه، هيعيش قد ما الجلد يعيش. الشنطة دي اتعملت أصلًا لصانعها نفسه، وقرر يبيعها: لأن اللي زي دي مكانها على كتف صاحبها في الشارع والشغل والخروجات، مش عند اللي عملها.</p>
+          <ul class="specs">
+            <li><span>الخامة</span><span>جلد طبيعي كامل ١٠٠٪</span></li>
+            <li><span>اللون</span><span>بني جملي (تان)</span></li>
+            <li><span>البطانة</span><span>جلد شمواه</span></li>
+            <li><span>النقش</span><span>إيكاروس — حفر بالليزر في الجلد</span></li>
+            <li><span>الخياطة</span><span>يدوية بالكامل</span></li>
+            <li><span>النوع</span><span>شنطة كروس بحزام قابل للتعديل</span></li>
+            <li><span>المقاس</span><span>٢٩ × ٢٢ × ٩ سم (عرض × ارتفاع × عمق)</span></li>
+            <li><span>طول الحزام</span><span>حوالي ١٤٠ سم — قابل للتعديل</span></li>
+            <li><span>الكمية</span><span>قطعة واحدة — مش هيتعمل زيها</span></li>
+            <li><span>الدفع</span><span>٥٠٪ عربون — والباقي بعد ما تعاينها بنفسك</span></li>
+          </ul>
+          <div class="price-row">
+            <div class="price">١٬٨٠٠ <small>جنيه</small></div>
+            <p class="note">بتدفع ٥٠٪ من قيمة الطلب عربون، وبتعاين الشنطة بنفسك — تمسكها، تشم ريحة الجلد الأصلي، وتقلّبها غرزة غرزة — قبل سداد باقي المبلغ.</p>
+          </div>
+          <div class="piece-cta">
+            <a class="btn btn-gold" href="#order-form" data-order-product="icarus">اطلب شنطة إيكاروس</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener">أو كلّمنا خاص على إنستجرام</a>
+            <a class="btn btn-ghost" href="#gallery">شوف باقي الصور</a>
+            <a class="btn btn-ghost" id="waitlistCta" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener" hidden>سجّل اهتمامك بالقطعة الجاية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WALLETS: PETROL BIFOLDS ===== -->
+  <section id="wallets">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>محفظتين من <em>جلدية واحدة</em></h2>
+        <p>جلدية بترولي واحدة طلع منها محفظتين باي فولد: واحدة محروقة بالديب، والتانية سادة على طبيعتها. كل واحدة قطعة واحدة بس — اللي توصله الأول، هي بتاعته.</p>
+      </div>
+
+      <!-- WOF wallet -->
+      <div class="piece-grid wallet-block">
+        <div class="viewer reveal">
+          <div class="viewer-main">
+            <img id="wofImg" src="assets/08-wof-hero.jpg" alt="محفظة WOF البترولي — جلد طبيعي بحرق ليزر رأس ديب هندسي وكلمة WOF" loading="lazy" decoding="async" />
+          </div>
+          <div class="viewer-thumbs three" role="group" aria-label="صور محفظة WOF">
+            <button type="button" class="active" data-full="assets/08-wof-hero.jpg" data-alt="محفظة WOF مفتوحة — رأس الديب الهندسي على وش وكلمة WOF على الوش التاني"><img loading="lazy" decoding="async" src="assets/08-wof-hero.jpg" alt="الصورة الرئيسية لمحفظة WOF" /></button>
+            <button type="button" data-full="assets/09-wof-editorial.jpg" data-alt="محفظة WOF على طاولة الورشة بين أدوات الجلد وبكرة الخيط الكريمي"><img loading="lazy" decoding="async" src="assets/09-wof-editorial.jpg" alt="محفظة WOF في الورشة" /></button>
+            <button type="button" data-full="assets/10-wof-interior-stamp.jpg" data-alt="محفظة WOF مفتوحة من فوق على حجر غامق — جيوب مايلة على شكل X وختم WOF صغير على الجيب"><img loading="lazy" decoding="async" src="assets/10-wof-interior-stamp.jpg" alt="محفظة WOF من جوّه — جيوب X وختم WOF" /></button>
+          </div>
+        </div>
+
+        <div class="piece-copy reveal">
+          <span class="one-badge status-badge" data-status="available"><span class="status-dot" aria-hidden="true"></span>قطعة واحدة — متاحة الآن</span>
+          <h2>محفظة WOF — الديب <span class="lat">WOF</span></h2>
+          <p class="piece-quote">الديب مش رسمة على المحفظة… الديب محروق في جلدها نفسه.</p>
+          <p>محفظة باي فولد رجالي من جلد طبيعي لونه بترولي — قطعة واحدة اتعملت من الجلدية دي ومش هيتعمل زيها. وش محروق عليه بالليزر رأس ديب مرسوم بخطوط هندسية حادة، والوش التاني واخد كلمة WOF بحروف كبيرة. والحرق الليزر داخل في الجلد نفسه: مش بيتمسح، ومش بيتقشّر، وهيعيش قد ما الجلد يعيش.</p>
+          <ul class="specs">
+            <li><span>الخامة</span><span>جلد طبيعي — لون بترولي</span></li>
+            <li><span>الحرق</span><span>رأس ديب هندسي + كلمة WOF — بالليزر</span></li>
+            <li><span>من جوّه</span><span>جيوب مايلة على شكل X + ختم WOF صغير على الجيب</span></li>
+            <li><span>الخياطة</span><span>يدوية بالكامل — خيط كريمي</span></li>
+            <li><span>الحواف</span><span>مصبوغة أسود ومصقولة</span></li>
+            <li><span>النوع</span><span>محفظة باي فولد رجالي</span></li>
+            <li><span>المقاس وهي مقفولة</span><span>١١ × ٩ سم</span></li>
+            <li><span>فتحات الكروت</span><span>٤ فتحات — كل فتحة تشيل كارت واحد مرتاح</span></li>
+            <li><span>جيب الفلوس</span><span>بعرض المحفظة</span></li>
+            <li><span>الكمية</span><span>قطعة واحدة — مش هيتعمل زيها</span></li>
+            <li><span>الدفع</span><span>٥٠٪ عربون — والباقي بعد ما تعاينها بنفسك</span></li>
+          </ul>
+          <div class="price-row">
+            <div class="price">٧٥٠ <small>جنيه</small></div>
+            <p class="note">بتدفع ٥٠٪ من قيمة الطلب عربون، وبتعاين المحفظة بنفسك — تمسكها وتشوف الحرق بعينك — قبل سداد باقي المبلغ.</p>
+          </div>
+          <div class="piece-cta">
+            <a class="btn btn-gold" href="#order-form" data-order-product="wof">اطلب محفظة WOF</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener">أو كلّمنا خاص على إنستجرام</a>
+            <a class="btn btn-ghost" href="#order-form" data-order-product="custom">أو اطلب واحدة بتصميمك</a>
+          </div>
+          <figure class="wallet-video">
+            <video controls preload="none" poster="assets/08-wof-hero.jpg" playsinline>
+              <source src="assets/video-wof.mp4" type="video/mp4" />
+            </video>
+            <figcaption><b>فيديو محفظة WOF</b>شوف الديب والحرق وختم WOF في الفيديو الإعلاني للقطعة</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <hr class="stitch wallet-sep" />
+
+      <!-- Plain petrol wallet -->
+      <div class="piece-grid flip wallet-block">
+        <div class="viewer reveal">
+          <div class="viewer-main">
+            <img id="plainImg" src="assets/13-plain-hero.jpg" alt="المحفظة البترولي السادة — جلد طبيعي بوش ناعم من غير أي حرق" loading="lazy" decoding="async" />
+          </div>
+          <div class="viewer-thumbs two" role="group" aria-label="صور المحفظة البترولي السادة">
+            <button type="button" class="active" data-full="assets/13-plain-hero.jpg" data-alt="المحفظة البترولي السادة مقفولة على حجر غامق — وش ناعم والخياطة الكريمية على الطرف"><img loading="lazy" decoding="async" src="assets/13-plain-hero.jpg" alt="الصورة الرئيسية للمحفظة السادة" /></button>
+            <button type="button" data-full="assets/14-plain-interior-real.jpg" data-alt="المحفظة السادة مفتوحة من فوق على حجر غامق — جيوب مايلة على شكل X من غير أي ختم أو حروف"><img loading="lazy" decoding="async" src="assets/14-plain-interior-real.jpg" alt="المحفظة السادة من جوّه — جيوب X" /></button>
+          </div>
+        </div>
+
+        <div class="piece-copy reveal">
+          <span class="one-badge status-badge" data-status="available"><span class="status-dot" aria-hidden="true"></span>قطعة واحدة — متاحة الآن</span>
+          <h2>محفظة بترولي سادة <span class="lat">Plain</span></h2>
+          <p class="piece-quote">من غير ولا نقشة واحدة — الجلد ومسامه هما الشكل كله.</p>
+          <p>أخت محفظة WOF من نفس الجلدية البترولي، بس دي سادة بالكامل: وش ناعم من غير أي حرق، ولون الجلد الطبيعي ومسامه هما الزخرفة. من جوّه جيوب كروت على الناحيتين وجيب للفلوس، وخياطتها يدوية بخيط كريمي وحوافها مصبوغة أسود ومصقولة — نفس الشغل، بس للي بيحب الهدوء.</p>
+          <ul class="specs">
+            <li><span>الخامة</span><span>جلد طبيعي — لون بترولي</span></li>
+            <li><span>الوش</span><span>سادة ناعم — من غير أي حرق</span></li>
+            <li><span>من جوّه</span><span>جيوب كروت على الناحيتين + جيب فلوس</span></li>
+            <li><span>الخياطة</span><span>يدوية بالكامل — خيط كريمي</span></li>
+            <li><span>الحواف</span><span>مصبوغة أسود ومصقولة</span></li>
+            <li><span>النوع</span><span>محفظة باي فولد رجالي</span></li>
+            <li><span>المقاس وهي مقفولة</span><span>١١ × ٩ سم</span></li>
+            <li><span>فتحات الكروت</span><span>٤ فتحات — كل فتحة تشيل كارت واحد مرتاح</span></li>
+            <li><span>جيب الفلوس</span><span>بعرض المحفظة</span></li>
+            <li><span>الكمية</span><span>قطعة واحدة — مش هيتعمل زيها</span></li>
+            <li><span>الدفع</span><span>٥٠٪ عربون — والباقي بعد ما تعاينها بنفسك</span></li>
+          </ul>
+          <div class="price-row">
+            <div class="price">٦٥٠ <small>جنيه</small></div>
+            <p class="note">بتدفع ٥٠٪ من قيمة الطلب عربون، وبتعاين المحفظة بنفسك — تمسكها، تشم ريحة الجلد الأصلي، وتقلّب جيوبها واحد واحد — قبل سداد باقي المبلغ.</p>
+          </div>
+          <div class="piece-cta">
+            <a class="btn btn-gold" href="#order-form" data-order-product="plain">اطلب المحفظة السادة</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener">أو كلّمنا خاص على إنستجرام</a>
+            <a class="btn btn-ghost" href="#order-form" data-order-product="custom">أو اطلب واحدة بتصميمك</a>
+          </div>
+          <figure class="wallet-video">
+            <video controls preload="none" poster="assets/13-plain-hero.jpg" playsinline>
+              <source src="assets/video-plain.mp4" type="video/mp4" />
+            </video>
+            <figcaption><b>فيديو المحفظة السادة</b>شوف الجلد البترولي وجيوب الـX من جوّه في الفيديو الإعلاني للقطعة</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORY: HOW IT WAS MADE ===== -->
+  <section class="story" id="story">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>قصة الصنع — <em>تلات أيام على طاولة واحدة</em></h2>
+        <p>شنطة إيكاروس اتعملت في تلات أيام شغل متقطع، حوالي ٨ ساعات شغل فعلي. الصور دي من الورشة نفسها، مش من جلسة تصوير.</p>
+      </div>
+      <div class="story-days">
+        <article class="day reveal">
+          <img src="assets/05-workshop-1.jpg" alt="شنطة إيكاروس على طاولة الورشة بعد قص الجلد وتجهيز القطع" loading="lazy" />
+          <div class="day-body">
+            <span class="day-tag">اليوم الأول</span>
+            <h3>القص والتجهيز</h3>
+            <p>اختيار حتة الجلد الصح — مسامها سليمة وسمكها مظبوط — وقص كل قطعة على الباترون: الجسم، الغطا، والحزام.</p>
+          </div>
+        </article>
+        <article class="day reveal">
+          <img src="assets/06-workshop-2.jpg" alt="لقطة قريبة من الورشة لغرز الشنطة اليدوية والحزام بعد التجميع" loading="lazy" />
+          <div class="day-body">
+            <span class="day-tag">اليوم التاني</span>
+            <h3>الخياطة والتجميع</h3>
+            <p>خياطة يدوية غرزة غرزة، تركيب بطانة الشمواه من جوّه، وتثبيت الحزام والإكسسوارات لحد ما الشنطة تقف على شكلها النهائي.</p>
+          </div>
+        </article>
+        <article class="day reveal">
+          <img src="assets/07-workshop-3.jpg" alt="شنطة إيكاروس من الجانب في الورشة بعد حفر النقش بالليزر والتشطيب" loading="lazy" />
+          <div class="day-body">
+            <span class="day-tag">اليوم التالت</span>
+            <h3>الحفر والتشطيب</h3>
+            <p>حفر إيكاروس بالليزر في الجلد نفسه، تشطيب الحواف وتلميعها — وبعدها الشنطة جاهزة تتلبس وتتعاش، مش تتركن.</p>
+          </div>
+        </article>
+      </div>
+      <div class="story-video reveal">
+        <video controls preload="none" poster="assets/poster-lifestyle.jpg" playsinline>
+          <source src="assets/video-lifestyle.mp4" type="video/mp4" />
+        </video>
+        <div>
+          <h3>شوفها وهي بتتعاش</h3>
+          <p>الفيديو ده معمول من غير كلام — موسيقى وصوت بس — عشان تشوف الشنطة في يوم عادي: على الكتف، على طاولة القهوة، وفي الشارع. «اتعملت عشان تتعاش — مش عشان تتركن».</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS ===== -->
+  <section id="videos">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>المحتوى <em>بالفيديو</em></h2>
+        <p>كل فيديوهات القطعة في مكان واحد — دوس تشغيل واسمع وشوف بنفسك.</p>
+      </div>
+      <div class="videos-grid">
+        <figure class="video-card reveal">
+          <video controls preload="none" poster="assets/poster-ad.jpg" playsinline>
+            <source src="assets/video-ad.mp4" type="video/mp4" />
+          </video>
+          <figcaption><b>فيديو الإعلان</b>«هيتخانقوا عليها لما تموت» — الإعلان الرسمي للقطعة</figcaption>
+        </figure>
+        <figure class="video-card reveal">
+          <video controls preload="none" poster="assets/poster-lifestyle.jpg" playsinline>
+            <source src="assets/video-lifestyle.mp4" type="video/mp4" />
+          </video>
+          <figcaption><b>فيديو اللايف ستايل</b>الشنطة في الاستخدام اليومي الحقيقي</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>من قريب… <em>التفاصيل بتتكلم</em></h2>
+        <p>دوس على أي صورة عشان تشوفها كبيرة. الحفر بالليزر على الجلد الطبيعي بيبيّن مسام الجلد نفسه حوالين الرسم — التفاصيل دي مبتتعملش في الجلد الصناعي.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="g-item g-a reveal" data-cap="القطعة كاملة — جلد طبيعي كامل وحزام يدوي الخياطة" tabindex="0">
+          <img src="assets/01-hero.jpg" alt="شنطة إيكاروس كاملة من الأمام" />
+          <figcaption><b>القطعة كاملة</b>جلد طبيعي كامل، وحزام مخيّط بالإيد</figcaption>
+        </figure>
+        <figure class="g-item g-b reveal" data-cap="نقش إيكاروس — حفر بالليزر بيبيّن مسام الجلد حوالين الرسم" tabindex="0">
+          <img loading="lazy" decoding="async" src="assets/02-detail.jpg" alt="لقطة قريبة لنقش إيكاروس ومسام الجلد" />
+          <figcaption><b>النقش والمسام</b>حفر ليزر… وكل غرزة معمولة بالإيد</figcaption>
+        </figure>
+        <figure class="g-item g-c reveal" data-cap="لقطة درامية — تلات أيام شغل، حوالي ٨ ساعات شغل فعلي: قص وخياطة وحفر" tabindex="0">
+          <img loading="lazy" decoding="async" src="assets/03-editorial.jpg" alt="شنطة إيكاروس بإضاءة درامية" />
+          <figcaption><b>معمولة تعيش</b>مش تتبدّل كل موسم</figcaption>
+        </figure>
+        <figure class="g-item g-d reveal" data-cap="في يومك — حجم عملي وبطانة شمواه من جوّه، والجلد بيحلى مع الاستعمال" tabindex="0">
+          <img loading="lazy" decoding="async" src="assets/04-lifestyle.jpg" alt="شنطة إيكاروس في الاستخدام اليومي على طاولة مقهى" />
+          <figcaption><b>شنطة يومك كله</b>بتكبر معاك… وتبقى شبهك</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>إيه اللي <em>بيتعمل هنا؟</em></h2>
+        <p>غير القطع الجاهزة، مسام بيشتغل بالطلب — قطعتك بتتصمم وتتنفذ ليك انت بس.</p>
+      </div>
+      <div class="svc-list">
+        <div class="svc reveal">
+          <div class="num">٠١</div>
+          <div>
+            <h3>شنط كاستم حسب الطلب</h3>
+            <p>كروس، توت، أو شنطة شغل — تختار المقاس واللون وشكل القفل، وتتنفذ بالإيد من جلد طبيعي كامل ببطانة شمواه.</p>
+          </div>
+          <span class="tag">بالطلب</span>
+        </div>
+        <div class="svc reveal">
+          <div class="num">٠٢</div>
+          <div>
+            <h3>محافظ وإكسسوارات جلد</h3>
+            <p>محافظ وكراتات وحافظات صغيرة من نفس الجلد الأصلي، بخياطة يدوية تعيش سنين وتتظبط على استخدامك.</p>
+          </div>
+          <span class="tag">بالطلب</span>
+        </div>
+        <div class="svc reveal">
+          <div class="num">٠٣</div>
+          <div>
+            <h3>حفر ونقش بالليزر</h3>
+            <p>اسمك، لوجو، أو رسمة ليها معنى عندك — بتتحفر في الجلد نفسه بالليزر، فتفضل ثابتة العمر كله من غير ما تتمسح أو تتقشّر.</p>
+          </div>
+          <span class="tag">على أي قطعة</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDER STEPS ===== -->
+  <section id="order">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>إزاي <em>تطلب؟</em></h2>
+        <p>الطلب والتواصل كله من خلال إنستجرام — أربع خطوات وقطعتك تبقى في إيدك.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="n">١</div>
+          <h3>كلّمنا خاص</h3>
+          <p>ابعت رسالة على إنستجرام @a7med_el7akem وقولنا عايز قطعة جاهزة ولا تصميم خاص.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">٢</div>
+          <h3>نتفق على التفاصيل</h3>
+          <p>المقاس، لون الجلد، والنقش اللي هيتحفر — كل حاجة بتتظبط معاك، وبتدفع ٥٠٪ من قيمة الطلب عربون قبل ما الشغل يبدأ.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">٣</div>
+          <h3>التنفيذ بالإيد</h3>
+          <p>قص وخياطة وحفر بالليزر بإيد صانع واحد، وبيوصلك تحديثات بصور الشغل وهو بيتنفذ.</p>
+        </div>
+        <div class="step reveal">
+          <div class="n">٤</div>
+          <h3>المعاينة وسداد الباقي</h3>
+          <p>بتعاين قطعتك بنفسك — امسكها وقلّبها غرزة غرزة — وبعد المعاينة تسدد الـ٥٠٪ الباقية من تمنها.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDER QUESTIONNAIRE ===== -->
+  <section class="order-form-sec" id="order-form">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>اطلب قطعتك — <em>جاوب على الأسئلة دي</em></h2>
+        <p>كل سؤال هنا بيفرق في القطعة اللي هتوصلك. املأ اللي يناسبك، وفي الآخر هتتجهزلك رسالة مرتبة جاهزة للإرسال — انسخها وابعتها في خاص إنستجرام.</p>
+      </div>
+
+      <form class="q-form reveal" id="qForm" novalidate>
+        <div class="q-grid">
+
+          <div class="field full">
+            <label for="qProduct">القطعة اللي بتطلبها</label>
+            <select id="qProduct">
+              <option value="custom" selected>قطعة خاصة — تصميم جديد بالطلب</option>
+              <option value="icarus">شنطة إيكاروس (قطعة جاهزة) — ١٬٨٠٠ جنيه</option>
+              <option value="wof">محفظة WOF — الديب (قطعة جاهزة) — ٧٥٠ جنيه</option>
+              <option value="plain">محفظة بترولي سادة (قطعة جاهزة) — ٦٥٠ جنيه</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <span class="f-label" id="ptypeLabel">نوع القطعة اللي عايزها؟</span>
+            <div class="chips" role="radiogroup" aria-labelledby="ptypeLabel">
+              <label class="chip"><input type="radio" name="ptype" value="شنطة كروس" checked /><span>شنطة كروس</span></label>
+              <label class="chip"><input type="radio" name="ptype" value="محفظة" /><span>محفظة</span></label>
+              <label class="chip"><input type="radio" name="ptype" value="حزام" /><span>حزام</span></label>
+              <label class="chip"><input type="radio" name="ptype" value="قطعة تانية" /><span>قطعة تانية</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="qUse">هتستخدمها في إيه يومياً؟</label>
+            <input type="text" id="qUse" placeholder="شغل، جامعة، خروجات، شيل لاب توب…" />
+          </div>
+
+          <div class="field">
+            <label for="qSize">المقاس التقريبي المطلوب</label>
+            <input type="text" id="qSize" placeholder="مثال: تشيل موبايل ومحفظة ونضارة" />
+          </div>
+
+          <div class="field">
+            <label for="qColor">لون الجلد المفضل</label>
+            <select id="qColor">
+              <option value="بني جملي (تان)">بني جملي (تان)</option>
+              <option value="بني غامق">بني غامق</option>
+              <option value="بني محمّر">بني محمّر</option>
+              <option value="أسود">أسود</option>
+              <option value="لون تاني — نتفق عليه">لون تاني — نتفق عليه</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="qDeadline">معاد التسليم اللي محتاجه <span class="opt">(اختياري)</span></label>
+            <input type="date" id="qDeadline" />
+          </div>
+
+          <div class="field full">
+            <span class="f-label" id="engLabel">عايز نقش أو حفر ليزر؟</span>
+            <div class="chips" role="radiogroup" aria-labelledby="engLabel">
+              <label class="chip"><input type="radio" name="engrave" value="اسم" /><span>اسم</span></label>
+              <label class="chip"><input type="radio" name="engrave" value="شعار (لوجو)" /><span>شعار (لوجو)</span></label>
+              <label class="chip"><input type="radio" name="engrave" value="رسمة" /><span>رسمة</span></label>
+              <label class="chip"><input type="radio" name="engrave" value="من غير نقش" checked /><span>من غير نقش</span></label>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="qEngrave">تفاصيل النقش <span class="opt">(الاسم أو الرسمة اللي في دماغك — اختياري)</span></label>
+            <input type="text" id="qEngrave" placeholder="مثال: اسم «مسام» بخط عربي على الغطا" />
+          </div>
+
+          <div class="field full">
+            <label for="qNotes">أي تفاصيل أو طلبات خاصة؟ <span class="opt">(اختياري)</span></label>
+            <textarea id="qNotes" placeholder="جيب إضافي، قفل معين، هدية لحد ومتغلّفة… أي حاجة في دماغك اكتبها هنا"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="qName">اسمك <span class="req" aria-hidden="true">*</span> <span class="opt">(مطلوب)</span></label>
+            <input type="text" id="qName" autocomplete="name" placeholder="الاسم اللي نناديلك بيه" aria-required="true" />
+          </div>
+
+          <div class="field">
+            <label for="qContact">رقم الموبايل أو وسيلة التواصل <span class="req" aria-hidden="true">*</span> <span class="opt">(مطلوب)</span></label>
+            <input type="tel" id="qContact" autocomplete="tel" placeholder="رقم موبايل أو واتساب" aria-required="true" />
+          </div>
+
+          <div class="field full">
+            <div class="photo-field">
+              <label for="qPhoto">صورة مرجعية <span class="opt">(اختياري — شكل عاجبك أو رسمة عايز زيها)</span></label>
+              <input type="file" id="qPhoto" accept="image/*" />
+              <div class="photo-preview" id="photoPreview"><img id="photoPreviewImg" alt="معاينة الصورة المرجعية اللي اخترتها" /></div>
+              <p class="photo-note">الصورة هتتبعت في شات إنستجرام نفسه بعد ما تبعت الرسالة — ابعت الرسالة الأول، وبعدين ارفق الصورة في نفس الشات.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="pay-note"><b>الدفع:</b> بتدفع ٥٠٪ من قيمة الطلب عربون، وبتعاين المنتج قبل سداد باقي المبلغ.</p>
+        <p class="q-error" id="qError" role="alert">فيه خانات مطلوبة ناقصة: اكتب اسمك ووسيلة تواصل نقدر نرد عليك بيها، عشان الطلب يوصلنا صح.</p>
+        <button type="submit" class="btn btn-gold q-submit">جهّز رسالة الطلب</button>
+
+        <div class="q-result" id="qResult">
+          <h3>رسالتك جاهزة</h3>
+          <p>الطلب بيتم فعليًا لما تبعت الرسالة دي في خاص إنستجرام — الموقع هنا بيجهّزها لك بس. انسخها والصقها في الخاص، ولو اخترت صورة مرجعية ارفقها في الشات بعدها.</p>
+          <textarea id="qMsg" readonly aria-label="رسالة الطلب الجاهزة"></textarea>
+          <div class="q-result-actions">
+            <button type="button" class="copy-btn" id="qCopy">انسخ الرسالة</button>
+            <a class="btn btn-gold" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener">افتح إنستجرام وابعتها</a>
+            <span class="copy-ok" id="copyOk" hidden>اتنسخت — الصقها في الشات</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>أسئلة <em>بتتسأل كتير</em></h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>مدة تنفيذ القطعة الكاستم قد إيه؟</summary>
+          <div class="faq-a"><p>الشغل يدوي بالكامل — قص وخياطة وحفر بإيد واحدة — فبياخد أيام حسب نوع القطعة وتفاصيلها. المعاد النهائي بيتأكد معاك في الشات قبل ما الشغل يبدأ، وبيوصلك صور تحديثات وهو بيتنفذ.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>فيه عربون؟ والدفع بيتم إزاي؟</summary>
+          <div class="faq-a"><p>أيوه: بتدفع ٥٠٪ من قيمة الطلب عربون، وبتعاين المنتج قبل سداد باقي المبلغ. العربون بيحجز الجلد والخامات باسمك من أول يوم، والباقي بيتسدد بعد ما تعاين قطعتك بنفسك.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>التوصيل لفين؟</summary>
+          <div class="faq-a"><p>التوصيل داخل القاهرة والجيزة، وباقي المحافظات بالاتفاق في الشات حسب وسيلة الشحن المتاحة وقتها.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>فيه صيانة بعد البيع؟</summary>
+          <div class="faq-a"><p>أيوه — صيانة بسيطة للغرز والجلد متاحة لعملاء مسام. لو غرزة فكت أو الجلد احتاج ترطيب وتظبيط، كلّمنا في الخاص ونظبطها مع بعض.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>قطعة إيكاروس المعروضة — أقدر أعاينها قبل سداد باقي تمنها؟</summary>
+          <div class="faq-a"><p>أيوه — بتدفع ٥٠٪ من تمنها عربون عشان تتحجز باسمك، وبتعاينها بنفسك قبل سداد الـ٥٠٪ الباقية: امسكها، شم ريحة الجلد الأصلي، قلّبها غرزة غرزة، وبعدين كمّل باقي المبلغ.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="rule"></div>
+        <h2>قالوا عن <em>مسام</em></h2>
+      </div>
+      <div class="reviews-empty reveal">
+        <p class="big">أول عميل لمسام لسه مكانه محجوز هنا</p>
+        <p>مسام لسه بيبدأ، فمفيش آراء منشورة لحد دلوقتي. أول قطعة تتباع، رأي صاحبها هيتنشر هنا باسمه وبكلامه زي ما هو.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section class="order">
+    <div class="wrap reveal">
+      <h2>قطعتك الجاية <em>لسه ما اتعملتش</em></h2>
+      <p>سواء عايز شنطة إيكاروس الوحيدة قبل ما تروح، أو قطعة تتصمم ليك من الصفر — البداية رسالة واحدة.</p>
+      <a class="ig-btn" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+        اطلب على إنستجرام
+      </a>
+      <span class="ig-handle">@a7med_el7akem</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top" aria-label="مسام — العودة للأعلى">
+      <span class="ar">مسام</span><span class="lat">Masam</span>
+    </a>
+    <p>جلد طبيعي · صناعة يدوية · قطعة واحدة من كل تصميم</p>
+    <a href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener" dir="ltr">@a7med_el7akem</a>
+  </div>
+</footer>
+
+<!-- ===== STICKY MOBILE BAR ===== -->
+<div class="sticky-bar">
+  <a class="sb-gold" href="#order-form">اطلب قطعتك</a>
+  <a class="sb-ghost" href="https://www.instagram.com/a7med_el7akem/" target="_blank" rel="noopener">إنستجرام</a>
+</div>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عارض الصور">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="إغلاق">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="الصورة السابقة">›</button>
+  <img id="lbImg" src="assets/01-hero.jpg" alt="شنطة إيكاروس كاملة من الأمام" />
+  <p class="cap" id="lbCap"></p>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="الصورة التالية">‹</button>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- product viewers (one per piece) ---------- */
+  document.querySelectorAll('.viewer').forEach(function(viewer){
+    var main = viewer.querySelector('.viewer-main img');
+    var thumbs = Array.prototype.slice.call(viewer.querySelectorAll('.viewer-thumbs button'));
+    if(!main || !thumbs.length) return;
+    thumbs.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        thumbs.forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        main.src = btn.getAttribute('data-full');
+        main.alt = btn.getAttribute('data-alt');
+      });
+    });
+  });
+  var viewerImg = document.getElementById('viewerImg');
+
+  /* ---------- lightbox ---------- */
+  var shots = [
+    { src:'assets/01-hero.jpg',     cap:'القطعة كاملة — جلد طبيعي كامل وحزام يدوي الخياطة', alt:'شنطة إيكاروس كاملة من الأمام' },
+    { src:'assets/02-detail.jpg',   cap:'نقش إيكاروس — حفر بالليزر بيبيّن مسام الجلد حوالين الرسم', alt:'لقطة قريبة لنقش إيكاروس ومسام الجلد' },
+    { src:'assets/03-editorial.jpg',cap:'لقطة درامية — تلات أيام شغل، حوالي ٨ ساعات شغل فعلي: قص وخياطة وحفر', alt:'شنطة إيكاروس بإضاءة درامية' },
+    { src:'assets/04-lifestyle.jpg',cap:'في يومك — حجم عملي وبطانة شمواه من جوّه، والجلد بيحلى مع الاستعمال', alt:'شنطة إيكاروس في الاستخدام اليومي' }
+  ];
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbCap = document.getElementById('lbCap');
+  var current = 0;
+
+  function show(i){
+    current = (i + shots.length) % shots.length;
+    lbImg.src = shots[current].src;
+    lbImg.alt = shots[current].alt;
+    lbCap.textContent = shots[current].cap;
+  }
+  function openLb(i){
+    show(i);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lbClose').focus();
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.g-item').forEach(function(item, idx){
+    item.addEventListener('click', function(){ openLb(idx); });
+    item.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLb(idx); }
+    });
+  });
+  viewerImg.addEventListener('click', function(){
+    var src = viewerImg.getAttribute('src');
+    var idx = shots.findIndex(function(s){ return s.src === src; });
+    openLb(idx < 0 ? 0 : idx);
+  });
+
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  document.getElementById('lbPrev').addEventListener('click', function(){ show(current - 1); });
+  document.getElementById('lbNext').addEventListener('click', function(){ show(current + 1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLb();
+    if(e.key === 'ArrowLeft') show(current + 1);   /* RTL: left = next */
+    if(e.key === 'ArrowRight') show(current - 1);
+  });
+
+  /* ---------- sticky bar: appears after the hero ---------- */
+  var stickyBar = document.querySelector('.sticky-bar');
+  if(stickyBar){
+    var onScroll = function(){
+      stickyBar.classList.toggle('show', window.scrollY > window.innerHeight * 0.85);
+    };
+    window.addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+  }
+
+  /* ---------- mobile nav toggle ---------- */
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  if(navToggle && navLinks){
+    function closeNav(){
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'فتح قائمة الأقسام');
+    }
+    navToggle.addEventListener('click', function(){
+      var open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? 'إغلاق قائمة الأقسام' : 'فتح قائمة الأقسام');
+    });
+    navLinks.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', closeNav);
+    });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeNav(); });
+    document.addEventListener('click', function(e){
+      if(navLinks.classList.contains('open') && !navLinks.contains(e.target) && !navToggle.contains(e.target)) closeNav();
+    });
+    window.addEventListener('resize', function(){ if(window.innerWidth > 1100) closeNav(); });
+  }
+
+  /* ---------- product order buttons: carry the chosen piece into the form ---------- */
+  var qProduct = document.getElementById('qProduct');
+  function syncPtype(val){
+    var map = { icarus:'شنطة كروس', wof:'محفظة', plain:'محفظة' };
+    var target = map[val];
+    if(!target) return;
+    var r = document.querySelector('input[name="ptype"][value="' + target + '"]');
+    if(r) r.checked = true;
+  }
+  document.querySelectorAll('[data-order-product]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var val = btn.getAttribute('data-order-product');
+      if(qProduct) qProduct.value = val;
+      syncPtype(val);
+    });
+  });
+  if(qProduct){
+    qProduct.addEventListener('change', function(){ syncPtype(qProduct.value); });
+  }
+
+  /* ---------- order questionnaire ---------- */
+  var qForm = document.getElementById('qForm');
+  if(qForm){
+    var qPhoto = document.getElementById('qPhoto');
+    var photoPreview = document.getElementById('photoPreview');
+    var photoPreviewImg = document.getElementById('photoPreviewImg');
+    var hasPhoto = false;
+
+    qPhoto.addEventListener('change', function(){
+      var file = qPhoto.files && qPhoto.files[0];
+      if(file){
+        hasPhoto = true;
+        photoPreviewImg.src = URL.createObjectURL(file);
+        photoPreview.classList.add('show');
+      } else {
+        hasPhoto = false;
+        photoPreview.classList.remove('show');
+        photoPreviewImg.removeAttribute('src');
+      }
+    });
+
+    function qVal(id){
+      var el = document.getElementById(id);
+      return el ? el.value.trim() : '';
+    }
+    function qRadio(name){
+      var r = qForm.querySelector('input[name="' + name + '"]:checked');
+      return r ? r.value : '';
+    }
+
+    qForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = qVal('qName');
+      var contact = qVal('qContact');
+      var err = document.getElementById('qError');
+      var nameEl = document.getElementById('qName');
+      var contactEl = document.getElementById('qContact');
+      nameEl.classList.toggle('invalid', !name);
+      contactEl.classList.toggle('invalid', !contact);
+      if(!name || !contact){
+        err.classList.add('show');
+        err.scrollIntoView({ behavior:'smooth', block:'center' });
+        (!name ? nameEl : contactEl).focus();
+        return;
+      }
+      err.classList.remove('show');
+
+      var prodSel = document.getElementById('qProduct');
+      var isReady = prodSel && prodSel.value !== 'custom';
+      var lines = [];
+      lines.push(isReady ? 'طلب قطعة جاهزة — مسام MASAM' : 'طلب قطعة خاصة — مسام MASAM');
+      lines.push('——————————');
+      lines.push('• الاسم: ' + name);
+      lines.push('• التواصل: ' + contact);
+      if(isReady){
+        lines.push('• القطعة المطلوبة: ' + prodSel.options[prodSel.selectedIndex].text);
+      }
+      lines.push('• نوع القطعة: ' + qRadio('ptype'));
+      var use = qVal('qUse');       if(use) lines.push('• الاستخدام اليومي: ' + use);
+      var size = qVal('qSize');     if(size) lines.push('• المقاس التقريبي: ' + size);
+      lines.push('• لون الجلد: ' + qVal('qColor'));
+      var eng = qRadio('engrave');
+      var engDet = qVal('qEngrave');
+      lines.push('• النقش / الحفر: ' + eng + (engDet ? ' — ' + engDet : ''));
+      var notes = qVal('qNotes');   if(notes) lines.push('• تفاصيل خاصة: ' + notes);
+      var dl = qVal('qDeadline');   if(dl) lines.push('• معاد التسليم المطلوب: ' + dl);
+      if(hasPhoto) lines.push('• عندي صورة مرجعية — هبعتها هنا في الشات بعد الرسالة دي.');
+      lines.push('——————————');
+      lines.push('مستني ردكم على التفاصيل والسعر والمدة. شكراً!');
+
+      document.getElementById('qMsg').value = lines.join('\n');
+      document.getElementById('copyOk').hidden = true;
+      var result = document.getElementById('qResult');
+      result.classList.add('show');
+      result.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    });
+
+    document.getElementById('qCopy').addEventListener('click', function(){
+      var msg = document.getElementById('qMsg');
+      var ok = document.getElementById('copyOk');
+      function done(){ ok.hidden = false; }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(msg.value).then(done, function(){
+          msg.select(); document.execCommand('copy'); done();
+        });
+      } else {
+        msg.select(); document.execCommand('copy'); done();
+      }
+    });
+  }
+
+  /* ---------- scroll reveal ---------- */
+  document.documentElement.classList.add('js');
+  var revealEls = document.querySelectorAll('.reveal');
+  function revealAll(){
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function(el){ io.observe(el); });
+    /* Safety net: nothing stays hidden if scrolling never triggers */
+    setTimeout(revealAll, 2500);
+  } else {
+    revealAll();
+  }
+})();
+</script>
+</body>
+</html>
